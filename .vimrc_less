@@ -1,0 +1,24 @@
+" No compatibility – necessary for mappings to work.
+set nocompatible
+
+" Ignore cases when searching
+set ignorecase
+
+" Stop wrapping lines
+set nowrap
+
+" Enable line numbers
+set number
+
+" Turn syntax on
+syntax enable
+
+
+" Key bindings.
+nmap <Up> <C-Y>
+nmap <Down> <C-E>
+nmap <Left> zH
+nmap <Right> zL
+
+nnoremap . :tabnew\|0r!grep -n  #<Left><Left>
+nnoremap , :%s///gc<Left><Left><Left><Left>
