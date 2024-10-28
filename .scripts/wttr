@@ -1,6 +1,0 @@
-#!/bin/sh
-
-location=$1
-url="https://wttr.in/$1?0q"
-
-curl $url
